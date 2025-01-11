@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "369621294048",
+    "project_id": "uas-mobile-programming-aee8c",
+    "storage_bucket": "uas-mobile-programming-aee8c.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:369621294048:android:48b223a012fd1a67032985",
+        "android_client_info": {
+          "package_name": "com.example.uasmobileprogramming"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCwLuW_0dTW0kGDFKDkZUkDeWwtk6fQi24"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
