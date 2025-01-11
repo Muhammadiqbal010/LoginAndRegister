@@ -10,104 +10,146 @@
 
     <ImageView
         android:id="@+id/imgLogo"
-        android:layout_width="321dp"
-        android:layout_height="296dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="44dp"
+        android:layout_marginBottom="96dp"
         android:contentDescription="@null"
         android:src="@drawable/mercubuana"
-        tools:layout_editor_absoluteX="45dp"
-        tools:layout_editor_absoluteY="56dp" />
+        app:layout_constraintBottom_toTopOf="@+id/textViewUsername"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/tvRegister"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="376dp"
+        android:layout_marginBottom="37dp"
         android:text="Register Aplikasi"
         android:textColor="#000000"
         android:textSize="24sp"
         android:textStyle="bold"
-        tools:layout_editor_absoluteX="114dp"
-        tools:layout_editor_absoluteY="376dp" />
+        app:layout_constraintBottom_toTopOf="@+id/etUsername"
+        app:layout_constraintStart_toStartOf="@+id/etUsername"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/textViewUsername"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="11dp"
+        android:layout_marginEnd="7dp"
+        android:layout_marginBottom="37dp"
         android:text="Username:"
         android:textColor="#000000"
         android:textSize="20sp"
-        tools:layout_editor_absoluteX="11dp"
-        tools:layout_editor_absoluteY="448dp" />
+        app:layout_constraintBottom_toTopOf="@+id/textViewPassword"
+        app:layout_constraintEnd_toStartOf="@+id/etUsername"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgLogo" />
 
     <EditText
         android:id="@+id/etUsername"
-        android:layout_width="280dp"
-        android:layout_height="30dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="17dp"
+        android:layout_marginBottom="24dp"
         android:background="#FFFFFF"
         android:hint="Enter your username"
         android:inputType="text"
         android:textColor="#000000"
-        tools:layout_editor_absoluteX="114dp"
-        tools:layout_editor_absoluteY="445dp" />
+        app:layout_constraintBottom_toTopOf="@+id/etPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textViewUsername"
+        app:layout_constraintTop_toBottomOf="@+id/tvRegister" />
 
     <TextView
         android:id="@+id/textViewPassword"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="11dp"
+        android:layout_marginEnd="9dp"
+        android:layout_marginBottom="37dp"
         android:text="Password:"
         android:textColor="#000000"
         android:textSize="20sp"
-        tools:layout_editor_absoluteX="11dp"
-        tools:layout_editor_absoluteY="512dp" />
+        app:layout_constraintBottom_toTopOf="@+id/textViewEmail"
+        app:layout_constraintEnd_toStartOf="@+id/etPassword"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewUsername" />
 
     <EditText
         android:id="@+id/etPassword"
-        android:layout_width="282dp"
-        android:layout_height="30dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="24dp"
         android:background="#FFFFFF"
         android:hint="Enter your password"
         android:inputType="textPassword"
         android:textColor="#000000"
-        tools:layout_editor_absoluteX="114dp"
-        tools:layout_editor_absoluteY="509dp" />
+        app:layout_constraintBottom_toTopOf="@+id/etEmail"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textViewPassword"
+        app:layout_constraintTop_toBottomOf="@+id/etUsername" />
 
     <TextView
         android:id="@+id/textViewEmail"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="11dp"
+        android:layout_marginEnd="48dp"
+        android:layout_marginBottom="78dp"
         android:text="Email:"
         android:textColor="#000000"
         android:textSize="20sp"
-        tools:layout_editor_absoluteX="11dp"
-        tools:layout_editor_absoluteY="576dp" />
+        app:layout_constraintBottom_toTopOf="@+id/tvLoginHere"
+        app:layout_constraintEnd_toStartOf="@+id/etEmail"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewPassword" />
 
     <EditText
         android:id="@+id/etEmail"
-        android:layout_width="283dp"
-        android:layout_height="30dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="14dp"
+        android:layout_marginBottom="9dp"
         android:background="#FFFFFF"
         android:hint="Enter your email"
         android:inputType="textEmailAddress"
         android:textColor="#000000"
-        tools:layout_editor_absoluteX="114dp"
-        tools:layout_editor_absoluteY="573dp" />
+        app:layout_constraintBottom_toTopOf="@+id/btnRegister"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textViewEmail"
+        app:layout_constraintTop_toBottomOf="@+id/etPassword" />
 
     <Button
         android:id="@+id/btnRegister"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="41dp"
+        android:layout_marginBottom="61dp"
         android:backgroundTint="#003B6A"
         android:text="Register"
         android:textColor="#FFFFFF"
-        tools:layout_editor_absoluteX="155dp"
-        tools:layout_editor_absoluteY="622dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/etEmail"
+        app:layout_constraintTop_toBottomOf="@+id/etEmail" />
 
     <TextView
         android:id="@+id/tvLoginHere"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="31dp"
         android:text="Already have an account? Login Here"
         android:textColor="#000B76"
-        tools:layout_editor_absoluteX="90dp"
-        tools:layout_editor_absoluteY="681dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewEmail" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

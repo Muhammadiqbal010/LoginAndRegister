@@ -20,7 +20,7 @@ public class Menu extends AppCompatActivity {
 
     private EditText etMainUser;
     private TextView tvMain;
-    private Button btnLogin;
+    private Button btnLogout;
     private DatabaseReference database;
 
     @Override
@@ -30,13 +30,13 @@ public class Menu extends AppCompatActivity {
 
         // Inisialisasi elemen tampilan
         tvMain = findViewById(R.id.main);
-        btnLogin = findViewById(R.id.btnLogout);
+        btnLogout = findViewById(R.id.btnLogout);
 
         // Referensi ke Firebase Realtime Database
         database = FirebaseDatabase.getInstance().getReference("users");
 
         // Set listener untuk tombol login
-        btnLogin.setOnClickListener(new View.OnClickListener() {
+        btnLogout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 String usernameInput = tvMain.getText().toString();
